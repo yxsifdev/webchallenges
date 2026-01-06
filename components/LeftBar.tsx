@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function LeftBar() {
-  return <div>LeftBa sr</div>;
+  return <div>LeftBar</div>;
 }

@@ -1,9 +1,0 @@
-.vscode/
-.next/
-.turbo/
-dist/
-public/
-node_modules/
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
