@@ -1,7 +1,10 @@
+import WChallenges from '@/icons/WChallenges';
+
 export default function Home() {
   return (
     <div>
-      <h1>Hello, world!</h1>
+      <WChallenges />
+      <h1>WebChallenges</h1>
     </div>
   );
 }
