@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #171717;
+  --foreground: #ffffff;
+  --font-gendy: "Gendy", sans-serif;
+  --font-alkia: "Alkia", sans-serif;
 }
 
 @theme inline {
@@ -10,6 +12,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-gendy: var(--font-gendy);
+  --font-alkia: var(--font-alkia);
 }
 
 html {
