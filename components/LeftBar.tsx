@@ -5,6 +5,8 @@ import { MapIcon } from "@/icons/Map";
 import { PuzzleIcon } from "@/icons/Puzzle";
 import { headers } from "next/headers";
 import { Suspense } from "react";
+import Link from "next/link";
+import { UserIcon } from "@/icons/User";
 
 const LINKS = [
   { href: "/", label: "Home", icon: HomeIcon },
@@ -12,6 +14,7 @@ const LINKS = [
   { href: "/learning-path", label: "LearningPath", icon: MapIcon },
   { href: "/learn", label: "Learn", icon: BookIcon },
   { href: "/leaderboard", label: "Leaderboard", icon: CupIcon },
+  { href: "/profile", label: "Profile", icon: UserIcon },
 ];
 
 async function NavLinks() {
@@ -22,7 +25,7 @@ async function NavLinks() {
     <ul className="space-y-8">
       {LINKS.map(({ href, label, icon: Icon }) => (
         <li key={label}>
-          <a
+          <Link
             href={href}
             className={`flex items-center justify-center transition-colors ${
               href === pathname
@@ -31,7 +34,7 @@ async function NavLinks() {
             }`}
           >
             {Icon && <Icon className="size-7" />}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
