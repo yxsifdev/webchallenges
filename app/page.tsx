@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="min-h-screen p-2 grid grid-cols-1 md:grid-cols-[auto_1fr] lg:grid-cols-[auto_1fr_auto] gap-4">
       <LeftBar />
-      <div>
+      <div className="h-[calc(100vh-1rem)] overflow-y-auto">
         <TopBar />
         <section className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-8 mt-4">
           <div className="p-4 border bg-neutral-800/60 border-neutral-800 rounded-3xl">
